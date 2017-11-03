@@ -1,0 +1,34 @@
+@media only screen and (max-width: 900px) {
+
+	header nav a {
+		color: #fff;
+		padding: 0px;
+	}
+	header nav li {
+		font-size: 14px;
+	}
+	header h1#logo{
+		background: url(../img/logo.png) center/66px no-repeat;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+	.lista-desk {
+		display: none!important;
+	}
+	
+	.logo-bottom {
+		display: none!important;
+	}
+	
+	.sobre h1 {
+		font-size: 1.3em;
+	}
+	
+	.row-cop {
+		overflow: hidden;
+		font-size: 12px;
+	}
+	
+}

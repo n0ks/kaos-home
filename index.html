@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+
+	<title>Fraternidade KA0S</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/kaos-main.css" rel="stylesheet">
+	<link href="css/home-mobile.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/owl.theme.default.css" rel="stylesheet">
+	<link href="css/hover.css" rel="stylesheet">
+	<script src="lib/classie.js"></script>
+	<script>
+		function init() {
+			window.addEventListener('scroll', function(e) {
+				var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+					shrinkOn = 300,
+					header = document.querySelector("header");
+				if (distanceY > shrinkOn) {
+					classie.add(header, "smaller");
+				} else {
+					if (classie.has(header, "smaller")) {
+						classie.remove(header, "smaller");
+					}
+				}
+			});
+		}
+		window.onload = init();
+
+	</script>
+</head>
+
+<body>
+<span id="home" style="width: 0.1, opacity: 0"></span>
+	<header class="clearfix" >
+		<a href="index.html">
+			<h1 id="logo">Fraternidade KAOS</h1>
+		</a>
+
+		<nav class="clearfix lista-desk">
+			<ul class="list-unstyled">
+				<li>
+					<a class="hvr-overline-from-center" href="#home">HOME</a>
+				</li>
+
+
+				<li>
+					<a class="hvr-overline-from-center" href="#projetos">PROJETOS</a>
+				</li>
+
+
+				<li>
+					<a class="hvr-overline-from-center" href="#fraternidade">FRATERNIDADE</a>
+				</li>
+
+
+				<li>
+					<a class="hvr-overline-from-center" href="#integrantes">INTEGRANTES</a>
+				</li>
+
+
+				<li>
+					<a class="hvr-overline-from-center" href="#contato">FALE CONOSCO</a>
+				</li>
+			</ul>
+		</nav>
+		<button class="btn btn-menu hidden-md-up"><i class="fa fa-bars toggle-menu"></i></button>
+
+		<div class="menu-sidebar hide-menu hidden-md-up">
+			<i class="fa fa-times"></i>
+
+			<ul class="list-unstyled">
+				<li>
+					<a class="hvr-overline-from-center" href="">HOME</a>
+				</li>
+
+
+				<li>
+					<a class="hvr-overline-from-center" href="">PROJETOS</a>
+				</li>
+
+
+				<li>
+					<a class="hvr-overline-from-center" href="">FRATERNIDADE</a>
+				</li>
+
+
+				<li>
+					<a class="hvr-overline-from-center" href="">INTEGRANTES</a>
+				</li>
+
+
+				<li>
+					<a class="hvr-overline-from-center" href="">FALE CONOSCO</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+
+
+	<div class="owl-carousel owl-theme banners">
+		<div class="item">
+			<img alt="banner-kaos" src="img/banner.jpg">
+		</div>
+
+
+		<div class="item">
+			<img alt="banner-kaos" src="img/banner.jpg">
+		</div>
+
+
+		<div class="item">
+			<img alt="banner-kaos" src="img/banner.jpg">
+		</div>
+	</div>
+
+
+	<section class="sobre clearfix">
+		<div class="fraternidade" id="fraternidade">
+			<hr>
+			<h1 class="text-uppercase">Fraternidade</h1>
+			<img alt="fraternidade-teclado" src="img/frat1.jpg">
+
+			<p>No inicio só existia gente normal, chatos que não buscavam nada, se contentavam com tudo, não tinham relógios digitais, e então surgiu o ATREVIMENTO, o principio motor para que os ignorantes buscassem conhecimento, os inteligentes procurassem inovação, os chatos fizessem piada. </p>
+			<p>A partir deste dia nenhum balrog passou impune, pois todos os que surgiram depois tinham COMPROMISSO com a fraternidade, ajudavam seus irmãos, compravam toalhas e compartilhavem informação, desenvolvendo tecnologias que permitissem fazer o percurso de Kessel em menos de 12 parsecs, junto com seus colegas, tendo sempre em mente o RESPEITO, os novos seres surgidos do KAOS cultivaram amizades, desenvolveram tecnologias e lutaram a despeito das dificuldades. Essas novas entidades eram os KAOTICOS. KOSMOGONIA, Cap. I, Vers. I.</p>
+			<img alt="fraternidade-projetos" src="img/projetos.jpg" id="projetos">
+		</div>
+
+
+		<div class="governanca-ti">
+			<h1 class="text-uppercase">Governança TI</h1>
+
+			<hr>
+			<img alt="fraternidade-gov-ti" class="pull-left" src="img/gov-ti.jpg" width="200">
+
+			<p>Área responsável em garantir um conjunto estruturado dentro da fraternidade, trabalhando sempre com competência e com pensamento estratégico dentro do ramo da tecnologia para garantir aos futuros profissionais de TI uma barganha de de conhecimento com base em planejamento, implantação, processos, controles, gestão de pessoas.</p>
+			<br>
+
+		</div>
+
+
+		<div class="governanca-ti" id="img-right">
+			<h1 class="text-uppercase" id="h1-right">Desenvolvimento</h1>
+
+			<hr>
+			<img alt="fraternidade-gov-ti" class="pull-right" src="img/gov-ti.jpg" width="200">
+
+			<p>Equipe dedicada em trazer soluções tecnológicas para garantir efetividade na entrega de seus projetos, com um grande poder de análise, planejamento, desenvolvimento e organização, para que todo o processo demandado seja entregue com a qualidade que a KAOS vem trabalhando em conjunto de outros pilares.</p>
+			<br>
+
+		</div>
+
+
+		<div class="governanca-ti">
+			<h1 class="text-uppercase">Marketing</h1>
+
+			<hr>
+			<img alt="fraternidade-gov-ti" class="pull-left" src="img/gov-ti.jpg" width="200">
+
+			<p>Com sua ciência e a arte visionária, o marketing é responsável pela entrega do valor necessário para o seu mercado-alvo com o único foco de trazer solução ao cliente. Como também, identificar as necessidades e o desejo que não tenha sido realizado.</p>
+			<br>
+
+
+		</div>
+
+
+		<div class="governanca-ti" id="img-right">
+			<h1 class="text-uppercase" id="h1-right">E-Sports</h1>
+
+			<hr>
+			<img alt="fraternidade-gov-ti" class="pull-right" src="img/gov-ti.jpg" width="200">
+
+			<p>Equipe dedicada para o cenário competitivo de esportes eletrônicos, com base na filosofia que almeja alcançar suas conquistas acreditando no potencial de cada membro que faz parte de sua equipe e sempre evoluir a cada queda para o próxima luta.</p>
+		</div>
+
+
+		<div class="eventos">
+			<h1 class="text-uppercase">Eventos</h1>
+
+			<hr>
+			<div class="row">
+				<div class="col-md-12">
+					<p>Nenhum evento disponível no momento.</p>
+
+				</div>
+			</div>
+
+
+		</div>
+
+
+		<div class="container formulario clearfix" id="contato">
+			<h1 class="text-uppercase">Contate-<span class="azul">Nos</span></h1>
+
+			<hr>
+
+
+			<div class="form-group row">
+				<label for="nome">NOME</label>
+
+				<div class="input-group">
+					<div class="input-group-addon">
+						<i aria-hidden="true" class="fa fa-user-o"></i>
+					</div>
+					<input class="form-control" id="nome" type="text">
+				</div>
+			</div>
+
+
+			<div class="form-group row">
+				<label for="email">EMAIL</label>
+
+				<div class="input-group">
+					<div class="input-group-addon">
+						<i aria-hidden="true" class="fa fa-envelope"></i>
+					</div>
+					<input class="form-control" id="email" type="email">
+				</div>
+			</div>
+
+
+			<div class="form-group row">
+				<label for="exampleTextarea">MENSAGEM</label>
+
+				<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+			</div>
+			<button class="btn btn-primary enviar" type="button">ENVIAR</button>
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="row row-color">
+			<div class="container rodape">
+				<div class="col-md-4">
+					<h4>Contato</h4>
+
+					<hr class="linha">
+
+
+					<ul class="list-unstyled">
+						<li>Email: <a href="mailto:contato@fratkaos.com.br">contato@fratkaos.com.br</a>
+						</li>
+
+
+						<li>Telefone: (11) 99999-9999</li>
+
+
+						<li>Celular: (11) 99999-9999</li>
+					</ul>
+				</div>
+
+
+				<div class="col-md-2 logo-bottom"><img alt="" src="img/logo.png">
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row row-cop">
+			<p>© Todos os direitos reservados a FRATERNIDADE KAOS</p>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+
+
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js">
+
+
+	</script>
+	<script src="lib/owl.carousel.min.js">
+
+
+	</script>
+	<script src="lib/script.js">
+
+
+	</script>
+	<script>
+		$(document).ready(function() {
+			$('.owl-carousel').owlCarousel({
+				loop: true,
+				margin: 5,
+				items: 1,
+				autoHeight: true,
+				autoplay: true,
+				autoplayTimeout: 5000,
+				slideSpeed: 200,
+				responsive: {
+					0: {
+						items: 1,
+						nav: false
+					},
+					768: {
+						nav: true
+					}
+				}
+			});
+		});
+
+	</script>
+</body>
+
+</html>
