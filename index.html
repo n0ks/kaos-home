@@ -20,7 +20,7 @@
 	<script src="lib/classie.js"></script>
 	<script>
 		function init() {
-			window.addEventListener('scroll', function(e) {
+			window.addEventListener('scroll', function (e) {
 				var distanceY = window.pageYOffset || document.documentElement.scrollTop,
 					shrinkOn = 300,
 					header = document.querySelector("header");
@@ -34,11 +34,21 @@
 			});
 		}
 		window.onload = init();
-
 	</script>
 </head>
 
 <body>
+	<div id="fb-root"></div>
+	<script>
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
 	<span id="home" style="width: 0.1, opacity: 0"></span>
 	<header class="clearfix">
 		<a href="index.html">
@@ -72,7 +82,9 @@
 				</li>
 			</ul>
 		</nav>
-		<button class="btn btn-menu hidden-md-up"><i class="fa fa-bars toggle-menu"></i></button>
+		<button class="btn btn-menu hidden-md-up">
+			<i class="fa fa-bars toggle-menu"></i>
+		</button>
 
 		<div class="menu-sidebar hide-menu hidden-md-up">
 			<i class="fa fa-times"></i>
@@ -113,125 +125,141 @@
 
 
 		<div class="item">
-			<img alt="banner-kaos" src="img/banner.jpg">
+			<img alt="banner-kaos" src="img/pexels-photo-374074.jpg">
 		</div>
 
 
 		<div class="item">
-			<img alt="banner-kaos" src="img/banner.jpg">
+			<img alt="banner-kaos" src="img/pexels-photo-355988.jpg">
 		</div>
 	</div>
 
 
 	<section class="sobre clearfix">
 		<div class="col-md-12 col-lg-12 fraternidade" id="fraternidade">
-		<h1 class="text-uppercase">Fraternidade</h1>
+			<h1 class="text-uppercase">Fraternidade</h1>
 			<hr>
+			<div class="container-fluid">
 
-			<img alt="fraternidade-teclado" src="img/frat1.jpg" id="topo-img">
+				<img alt="fraternidade-teclado" src="img/frat1.jpg" id="topo-img">
+			</div>
+
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="fraternidade-content">
-							<p>No inicio só existia gente normal, chatos que não buscavam nada, se contentavam com tudo, não tinham relógios digitais, e então surgiu o ATREVIMENTO, o principio motor para que os ignorantes buscassem conhecimento, os inteligentes procurassem inovação, os chatos fizessem piada. </p>
-							<p>A partir deste dia nenhum balrog passou impune, pois todos os que surgiram depois tinham COMPROMISSO com a fraternidade, ajudavam seus irmãos, compravam toalhas e compartilhavem informação, desenvolvendo tecnologias que permitissem fazer o percurso de Kessel em menos de 12 parsecs, junto com seus colegas, tendo sempre em mente o RESPEITO, os novos seres surgidos do KAOS cultivaram amizades, desenvolveram tecnologias e lutaram a despeito das dificuldades. Essas novas entidades eram os KAOTICOS. KOSMOGONIA, Cap. I, Vers. I.</p>
+							<p>No inicio só existia gente normal, chatos que não buscavam nada, se contentavam com tudo, não tinham relógios digitais,
+								e então surgiu o ATREVIMENTO, o principio motor para que os ignorantes buscassem conhecimento, os inteligentes procurassem
+								inovação, os chatos fizessem piada. </p>
+							<p>A partir deste dia nenhum balrog passou impune, pois todos os que surgiram depois tinham COMPROMISSO com a fraternidade,
+								ajudavam seus irmãos, compravam toalhas e compartilhavem informação, desenvolvendo tecnologias que permitissem fazer
+								o percurso de Kessel em menos de 12 parsecs, junto com seus colegas, tendo sempre em mente o RESPEITO, os novos seres
+								surgidos do KAOS cultivaram amizades, desenvolveram tecnologias e lutaram a despeito das dificuldades. Essas novas
+								entidades eram os KAOTICOS. KOSMOGONIA, Cap. I, Vers. I.</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<img alt="fraternidade-projetos" src="img/projetos.jpg" id="projetos">
-		</div>
-
-
-
-
-
-
+			<div class="container-fluid">
+	
+				<img alt="fraternidade-projetos" src="img/projetos.jpg" id="projetos">
+			</div>
 			<div class="container">
 				<div class="row ">
-					<div class="col-md-12">
+					<div class="col-md-12 col-lg-12">
 						<div class="governanca-ti" id="img-right">
 							<div class="governanca-ti">
 								<h1 class="text-uppercase">Governança TI</h1>
-
+	
 								<hr>
 								<img alt="fraternidade-gov-ti" class="pull-left" src="img/gov-ti.jpeg" width="200">
-
-								<p>Área responsável em garantir um conjunto estruturado dentro da fraternidade, trabalhando sempre com competência e com pensamento estratégico dentro do ramo da tecnologia para garantir aos futuros profissionais de TI uma barganha de de conhecimento com base em planejamento, implantação, processos, controles, gestão de pessoas.</p>
+	
+								<p>Área responsável em garantir um conjunto estruturado dentro da fraternidade, trabalhando sempre com competência e
+									com pensamento estratégico dentro do ramo da tecnologia para garantir aos futuros profissionais de TI uma barganha
+									de de conhecimento com base em planejamento, implantação, processos, controles, gestão de pessoas.</p>
 								<br>
-
+	
 							</div>
 						</div>
 						<div class="governanca-ti" id="img-right">
 							<h1 class="text-uppercase" id="h1-right">Desenvolvimento</h1>
-
+	
 							<hr>
 							<img alt="fraternidade-gov-ti" class="pull-right" src="img/dev.jpeg" width="200">
-
+	
 							<div class="fraternidade-content">
-								<p>Equipe dedicada em trazer soluções tecnológicas para garantir efetividade na entrega de seus projetos, com um grande poder de análise, planejamento, desenvolvimento e organização, para que todo o processo demandado seja entregue com a qualidade que a KAOS vem trabalhando em conjunto de outros pilares.</p>
+								<p>Equipe dedicada em trazer soluções tecnológicas para garantir efetividade na entrega de seus projetos, com um grande
+									poder de análise, planejamento, desenvolvimento e organização, para que todo o processo demandado seja entregue com
+									a qualidade que a KAOS vem trabalhando em conjunto de outros pilares.</p>
 							</div>
 							<br>
 						</div>
-
-
-
+	
+	
+	
 						<div class="governanca-ti">
 							<h1 class="text-uppercase">Marketing</h1>
-
+	
 							<hr>
 							<img alt="fraternidade-gov-ti" class="pull-left" src="img/marketing.jpg" width="200">
-
+	
 							<div class="fraternidade-content">
-								<p>Com sua ciência e a arte visionária, o marketing é responsável pela entrega do valor necessário para o seu mercado-alvo com o único foco de trazer solução ao cliente. Como também, identificar as necessidades e o desejo que não tenha sido realizado.</p>
+								<p>Com sua ciência e a arte visionária, o marketing é responsável pela entrega do valor necessário para o seu mercado-alvo
+									com o único foco de trazer solução ao cliente. Como também, identificar as necessidades e o desejo que não tenha
+									sido realizado.</p>
 							</div>
 							<br>
-
-
+	
+	
 						</div>
-
-
+	
+	
 						<div class="governanca-ti" id="img-right">
 							<h1 class="text-uppercase" id="h1-right">E-Sports</h1>
-
+	
 							<hr>
 							<img alt="fraternidade-gov-ti" class="pull-right" src="img/esport.jpeg" width="200">
 							<div class="fraternidade-content">
-
+	
 								<div class="fraternidade-content">
-									<p>Equipe dedicada para o cenário competitivo de esportes eletrônicos, com base na filosofia que almeja alcançar suas conquistas acreditando no potencial de cada membro que faz parte de sua equipe e sempre evoluir a cada queda para o próxima luta.</p>
+									<p>Equipe dedicada para o cenário competitivo de esportes eletrônicos, com base na filosofia que almeja alcançar suas
+										conquistas acreditando no potencial de cada membro que faz parte de sua equipe e sempre evoluir a cada queda para
+										o próxima luta.</p>
+	
 								</div>
 							</div>
 						</div>
 					</div>
-
+	
 					<div class="eventos">
 						<h1 class="text-uppercase">Eventos</h1>
-
+	
 						<hr>
 						<div class="row">
 							<div class="col-md-12">
 								<p>Nenhum evento disponível no momento.</p>
-
+	
 							</div>
 						</div>
-
-
+	
+	
 					</div>
-
+	
 				</div>
 			</div>
-
-
+	
+	
 			<div class="container formulario clearfix" id="contato">
-				<h1 class="text-uppercase">Contate-<span class="azul">Nos</span></h1>
-
+				<h1 class="text-uppercase">Contate-
+					<span class="azul">Nos</span>
+				</h1>
+	
 				<hr>
-
-
+	
+	
 				<div class="form-group row">
 					<label for="nome">NOME</label>
-
+	
 					<div class="input-group">
 						<div class="input-group-addon">
 							<i aria-hidden="true" class="fa fa-user-o"></i>
@@ -239,26 +267,33 @@
 						<input class="form-control" id="nome" type="text">
 					</div>
 				</div>
-
-			<div class="form-group row">
-				<label for="email">EMAIL</label>
-
-				<div class="input-group">
-					<div class="input-group-addon">
-						<i aria-hidden="true" class="fa fa-envelope"></i>
+	
+				<div class="form-group row">
+					<label for="email">EMAIL</label>
+	
+					<div class="input-group">
+						<div class="input-group-addon">
+							<i aria-hidden="true" class="fa fa-envelope"></i>
+						</div>
+						<input class="form-control" id="email" type="email">
 					</div>
-					<input class="form-control" id="email" type="email">
 				</div>
+	
+	
+				<div class="form-group row">
+					<label for="exampleTextarea">MENSAGEM</label>
+	
+					<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+				</div>
+				<button class="btn btn-primary enviar" type="button">ENVIAR</button>
 			</div>
+		</div>
 
 
-			<div class="form-group row">
-				<label for="exampleTextarea">MENSAGEM</label>
 
-				<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-			</div>
-			<button class="btn btn-primary enviar" type="button">ENVIAR</button>
-			</div>
+
+
+
 
 	</section>
 
@@ -266,26 +301,25 @@
 	<footer>
 		<div class="row row-color">
 			<div class="container rodape">
-				<div class="col-md-4">
+				<div class="col-md-6 col-sm-12">
 					<h4>Contato</h4>
 
 					<hr class="linha">
 
 
 					<ul class="list-unstyled">
-						<li>Email: <a href="mailto:contato@fratkaos.com.br">contato@fratkaos.com.br</a>
+						<li>Email:
+							<a href="mailto:frat.kaos@gmail.com">frat.kaos@gmail.com</a>
 						</li>
 
-
-						<li>Telefone: (11) 99999-9999</li>
-
-
-						<li>Celular: (11) 99999-9999</li>
 					</ul>
 				</div>
 
 
-				<div class="col-md-2 logo-bottom"><img alt="" src="img/logo.png">
+				<div class="col-md-6 col-sm-12 logo-bottom">
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffratkaos%2F&tabs&width=340&height=154&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+					    width="340" height="154" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
 				</div>
 			</div>
 		</div>
@@ -296,23 +330,15 @@
 		</div>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
-
-
 	</script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js">
-
-
 	</script>
 	<script src="lib/owl.carousel.min.js">
-
-
 	</script>
 	<script src="lib/script.js">
-
-
 	</script>
 	<script>
-		$(document).ready(function() {
+		$(document).ready(function () {
 			$('.owl-carousel').owlCarousel({
 				loop: true,
 				margin: 5,
@@ -332,7 +358,6 @@
 				}
 			});
 		});
-
 	</script>
 </body>
 

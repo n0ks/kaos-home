@@ -19,7 +19,9 @@
 	}
 	
 	.logo-bottom {
-		display: none!important;
+		float: none;
+		width: auto;
+		margin: 0;
 	}
 	
 	.sobre h1 {
@@ -27,7 +29,6 @@
 	}
 	
 	.row-cop {
-		overflow: hidden;
 		font-size: 12px;
 	}
 	
