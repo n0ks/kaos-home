@@ -84,7 +84,14 @@ header h1#logo {
 .list-unstyled{
 	margin: 3em 1em;
 }
-
+.alertify-notifier .ajs-message{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin-right: 1em;
+	padding: 1em;
+	transition: all .3s;
+}
 .btn-menu {
 	width: 56px;
 	height: 56px;
