@@ -1,35 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 * {
 	text-decoration: none!important;
 }
+
 body {
 	background-color: #f5f5f5;
-	font-family: 'Lato', sans-serif;
 	overflow-x: hidden;
 	width: 100%!important;
+	font-family: 'Poppins', sans-serif;
 }
+
 img {
 	max-width: 100%;
 }
+
 .clearfix:after {
 	display: block;
 	content: "";
 	clear: both;
 	height: 0;
 }
-.container{
+
+.container {
 	padding-left: 0;
 	padding-right: 0;
-
 }
+
+
 /* =Header
 -------------------------------------------------------------- */
+
 header {
 	width: 100%;
 	height: 140px;
 	float: left;
 	top: 0;
 	left: 0;
-	/*	padding: 3% 4%;*/
 	background-color: #242225;
 	position: fixed;
 	z-index: 10;
@@ -40,6 +47,7 @@ header {
 	-o-transition: height 0.3s;
 	transition: height 0.3s;
 }
+
 header nav a {
 	margin: 0 auto;
 	color: white;
@@ -49,37 +57,21 @@ header nav a {
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
+
 header nav a:hover {
 	color: white;
 }
-header nav {
-	position: relative;
-	top: 50px;
-	right: 50px;
-}
+
+
 header nav ul {
 	float: right;
 }
+
 header nav li {
 	padding: 10px;
 	display: inline-block;
 }
-header.smaller {
-	height: 95px;
-	opacity: .8;
-}
-header.smaller h1#logo {
-	height: 95px;
-	background: url(../img/logo.png) center/66px no-repeat;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
-}
-header.smaller nav a {
-	top: -30px;
-}
+
 header h1#logo {
 	position: relative;
 	width: 136px;
@@ -89,6 +81,10 @@ header h1#logo {
 	background: url(../img/logo.png) center/86px no-repeat;
 	font-size: 0px;
 }
+.list-unstyled{
+	margin: 3em 1em;
+}
+
 .btn-menu {
 	width: 56px;
 	height: 56px;
@@ -101,23 +97,23 @@ header h1#logo {
 	right: 5%;
 	font-size: 1.6em;
 }
+
 .hvr-overline-from-center:before {
 	background: #f5f503!important;
 }
+
+
 /* =Menu lateral
 -------------------------------------------------------------- */
+
 .hide-menu {
 	width: 0%!important;
 }
+
 .hide-menu a {
 	opacity: 0;
 }
-#menu-topo {
-	margin-top: 5px;
-	color: #FFF;
-	font-size: 0.9em;
-	width: 100%;
-}
+
 .menu-sidebar {
 	position: fixed;
 	width: 35%;
@@ -130,14 +126,17 @@ header h1#logo {
 	transition: .5s ease-in-out;
 	z-index: 10;
 }
+
 .menu-sidebar a {
 	color: aliceblue;
 	transition: .2s ease;
 }
+
 .menu-sidebar ul li {
 	padding: 15px;
 	text-align: center;
 }
+
 .fa-times {
 	padding: 2%;
 	font-size: 1.7em;
@@ -145,11 +144,15 @@ header h1#logo {
 	opacity: .6;
 	cursor: pointer;
 }
+
 .fa-times:hover {
 	opacity: 1;
 }
+
+
 /* =Corpo
 -------------------------------------------------------------- */
+
 .sobre {
 	position: relative;
 	top: 9em;
@@ -160,57 +163,63 @@ header h1#logo {
 .fraternidade {
 	text-align: center;
 }
+
 .fraternidade h1 {
 	font-size: 30px;
 }
+
 .fraternidade p {
-	padding : 2em 0;
+	padding: 1em 0;
 }
+
 .eventos p {
 	font-size: 18px;
 	color: #d15353;
 }
+
 .banners {
 	top: 140px;
 }
+
 .governanca-ti {
 	height: auto;
-	padding: 10px;
-	margin: 30px 10px;
+	padding: 1.5em .75em;
+	margin: 1em 0;
 	text-align: justify;
 }
+
 .governanca-ti:nth-child(even) {
 	background-color: rgba(212, 212, 212, 0.45);
 	border-radius: 5px;
 }
+
 .governanca-ti img {
 	box-shadow: 2px 2px 10px rgba(0, 0, 0, .2);
-	margin-right: 10px;
+	margin: 0 1em;
 }
-.governanca-ti#img-right img {
-	margin-left: 10px;
+
+.governanca-ti p {
+	font-family: 'Nunito Sans', sans-serif;
 }
-.governanca-ti p {}
-.governanca-ti #h1-right {
+
+
+/* .governanca-ti #h1-right {
 	text-align: right!important;
-}
+} */
+
 .input-group-addon {
 	font-size: 12px;
 	line-height: 1;
 }
-.titulo {
-	position: relative;
-	font-size: 12px;
-	display: flex;
-	width: 74px;
-	margin: 0 auto;
-}
+
 .eventos {
 	margin-bottom: 50px;
 }
+
 .formulario {
-	width: 50%;
+	max-width: 800px;
 }
+
 .enviar {
 	float: right;
 	margin-right: -15px;
@@ -220,11 +229,15 @@ header h1#logo {
 	border-radius: 5px;
 	transition: .5s;
 }
+
 .azul {
 	color: #25abff;
 }
+
+
 /* =Footer
 -------------------------------------------------------------- */
+
 .rodape {
 	color: aliceblue;
 	margin: 1em auto;
@@ -232,13 +245,16 @@ header h1#logo {
 	justify-content: center;
 	flex-wrap: wrap;
 }
+
 .rodape h4 {
 	padding: 5px;
 	border-bottom: 1px solid rgba(212, 212, 212, 0.46);
 }
+
 .row-color {
 	background-color: #171F26;
 }
+
 footer .row {
 	position: relative;
 	top: 240px;
@@ -246,26 +262,25 @@ footer .row {
 	width: 100%;
 	margin-left: 0px;
 }
+
 .row-cop {
 	border-top: 1px solid rgba(46, 46, 46, 0.87);
 	height: 40px;
 	background-color: #0f1317;
 	overflow: hidden;
 }
+
 .row-cop p {
 	text-align: center;
 	line-height: 2;
 }
+
 .logo-bottom {
 	float: right;
 	width: 300px;
 	margin-top: 20px;
 }
-.news-wrap {
-	display: block;
-}
 
 #topo-img {
-
 	overflow: hidden;
 }

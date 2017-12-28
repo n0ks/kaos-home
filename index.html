@@ -8,6 +8,10 @@
 	<meta content="width=device-width, initial-scale=1" name="viewport">
 
 	<title>Fraternidade KA0S</title>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	  crossorigin="anonymous"></script>
+	<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js"></script>
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/semantic.min.css" />
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
@@ -17,6 +21,7 @@
 	<link href="css/owl.carousel.css" rel="stylesheet">
 	<link href="css/owl.theme.default.css" rel="stylesheet">
 	<link href="css/hover.css" rel="stylesheet">
+	</script>
 	<script src="lib/classie.js"></script>
 	<script>
 		function init() {
@@ -61,20 +66,20 @@
 					<a class="hvr-overline-from-center" href="#home">HOME</a>
 				</li>
 
+				<li>
+					<a class="hvr-overline-from-center" href="#fraternidade">FRATERNIDADE</a>
+				</li>
 
 				<li>
 					<a class="hvr-overline-from-center" href="#projetos">PROJETOS</a>
 				</li>
 
 
-				<li>
-					<a class="hvr-overline-from-center" href="#fraternidade">FRATERNIDADE</a>
-				</li>
 
-
+				<!-- 
 				<li>
 					<a class="hvr-overline-from-center" href="#integrantes">INTEGRANTES</a>
-				</li>
+				</li> -->
 
 
 				<li>
@@ -91,27 +96,21 @@
 
 			<ul class="list-unstyled">
 				<li>
-					<a class="hvr-overline-from-center" href="">HOME</a>
+					<a class="hvr-overline-from-center" href="#home">HOME</a>
+				</li>
+				<li>
+					<a class="hvr-overline-from-center" href="#fraternidade">FRATERNIDADE</a>
 				</li>
 
-
 				<li>
-					<a class="hvr-overline-from-center" href="">PROJETOS</a>
+					<a class="hvr-overline-from-center" href="#projetos">PROJETOS</a>
 				</li>
 
-
-				<li>
-					<a class="hvr-overline-from-center" href="">FRATERNIDADE</a>
-				</li>
-
-
-				<li>
+				<!-- <li>
 					<a class="hvr-overline-from-center" href="">INTEGRANTES</a>
-				</li>
-
-
+				</li> -->
 				<li>
-					<a class="hvr-overline-from-center" href="">FALE CONOSCO</a>
+					<a class="hvr-overline-from-center" href="#contato">FALE CONOSCO</a>
 				</li>
 			</ul>
 		</div>
@@ -161,131 +160,147 @@
 				</div>
 			</div>
 			<div class="container-fluid">
-	
+
 				<img alt="fraternidade-projetos" src="img/projetos.jpg" id="projetos">
 			</div>
 			<div class="container">
 				<div class="row ">
 					<div class="col-md-12 col-lg-12">
 						<div class="governanca-ti" id="img-right">
-							<div class="governanca-ti">
 								<h1 class="text-uppercase">Governança TI</h1>
-	
-								<hr>
-								<img alt="fraternidade-gov-ti" class="pull-left" src="img/gov-ti.jpeg" width="200">
-	
+
+							<hr>
+
+							<div class="wrapper">
+								<img alt="fraternidade-gov-ti" class="pull-left clearfix" src="img/gov-ti.jpeg" width="200">
+							</div>
+
+							<div class="wrapper">
 								<p>Área responsável em garantir um conjunto estruturado dentro da fraternidade, trabalhando sempre com competência e
 									com pensamento estratégico dentro do ramo da tecnologia para garantir aos futuros profissionais de TI uma barganha
 									de de conhecimento com base em planejamento, implantação, processos, controles, gestão de pessoas.</p>
-								<br>
-	
 							</div>
+							<br>
+
 						</div>
 						<div class="governanca-ti" id="img-right">
 							<h1 class="text-uppercase" id="h1-right">Desenvolvimento</h1>
-	
+
 							<hr>
-							<img alt="fraternidade-gov-ti" class="pull-right" src="img/dev.jpeg" width="200">
-	
-							<div class="fraternidade-content">
-								<p>Equipe dedicada em trazer soluções tecnológicas para garantir efetividade na entrega de seus projetos, com um grande
-									poder de análise, planejamento, desenvolvimento e organização, para que todo o processo demandado seja entregue com
-									a qualidade que a KAOS vem trabalhando em conjunto de outros pilares.</p>
+							<div class="wrapper">
+
+								<img alt="fraternidade-gov-ti" class="pull-right clearfix" src="img/dev.jpeg" width="200" id="dev">
 							</div>
-							<br>
-						</div>
-	
-	
-	
-						<div class="governanca-ti">
-							<h1 class="text-uppercase">Marketing</h1>
-	
-							<hr>
-							<img alt="fraternidade-gov-ti" class="pull-left" src="img/marketing.jpg" width="200">
-	
-							<div class="fraternidade-content">
-								<p>Com sua ciência e a arte visionária, o marketing é responsável pela entrega do valor necessário para o seu mercado-alvo
-									com o único foco de trazer solução ao cliente. Como também, identificar as necessidades e o desejo que não tenha
-									sido realizado.</p>
-							</div>
-							<br>
-	
-	
-						</div>
-	
-	
-						<div class="governanca-ti" id="img-right">
-							<h1 class="text-uppercase" id="h1-right">E-Sports</h1>
-	
-							<hr>
-							<img alt="fraternidade-gov-ti" class="pull-right" src="img/esport.jpeg" width="200">
-							<div class="fraternidade-content">
-	
+							<div class="wrapper">
+
 								<div class="fraternidade-content">
-									<p>Equipe dedicada para o cenário competitivo de esportes eletrônicos, com base na filosofia que almeja alcançar suas
-										conquistas acreditando no potencial de cada membro que faz parte de sua equipe e sempre evoluir a cada queda para
-										o próxima luta.</p>
-	
+									<p>Equipe dedicada em trazer soluções tecnológicas para garantir efetividade na entrega de seus projetos, com um grande
+										poder de análise, planejamento, desenvolvimento e organização, para que todo o processo demandado seja entregue
+										com a qualidade que a KAOS vem trabalhando em conjunto de outros pilares.</p>
 								</div>
 							</div>
+							<br>
 						</div>
-					</div>
+
+
+
+						<div class="governanca-ti">
+							<h1 class="text-uppercase">Marketing</h1>
+
+							<hr>
+							<div class="wrapper">
+
+								<img alt="fraternidade-gov-ti" class="pull-left clearfix" src="img/marketing.jpg" width="200">
+							</div>
+							<div class="wrapper">
+
+								<div class="fraternidade-content">
+									<p>Com sua ciência e a arte visionária, o marketing é responsável pela entrega do valor necessário para o seu mercado-alvo
+										com o único foco de trazer solução ao cliente. Como também, identificar as necessidades e o desejo que não tenha
+										sido realizado.</p>
+								</div>
+							</div>
+							<br>
+
+
+						</div>
+						<div class="governanca-ti" id="img-right">
+								<h1 class="text-uppercase" id="h1-right">E-Sports</h1>
 	
+								<hr>
+								<div class="wrapper">
+	
+									<img alt="fraternidade-gov-ti" class="pull-right clearfix" src="img/esport.jpeg" width="200" id="dev">
+								</div>
+								<div class="wrapper">
+	
+									<div class="fraternidade-content">
+										<p>Equipe dedicada para o cenário competitivo de esportes eletrônicos, com base na filosofia que almeja alcançar suas
+												conquistas acreditando no potencial de cada membro que faz parte de sua equipe e sempre evoluir a cada queda para
+												o próxima luta.</p>
+									</div>
+								</div>
+								<br>
+							</div>
+					</div>
+
 					<div class="eventos">
 						<h1 class="text-uppercase">Eventos</h1>
-	
+
 						<hr>
 						<div class="row">
 							<div class="col-md-12">
 								<p>Nenhum evento disponível no momento.</p>
-	
+
 							</div>
 						</div>
-	
-	
+
+
 					</div>
-	
+
 				</div>
 			</div>
-	
-	
+
+
 			<div class="container formulario clearfix" id="contato">
 				<h1 class="text-uppercase">Contate-
 					<span class="azul">Nos</span>
 				</h1>
-	
+
 				<hr>
-	
-	
-				<div class="form-group row">
-					<label for="nome">NOME</label>
-	
-					<div class="input-group">
-						<div class="input-group-addon">
-							<i aria-hidden="true" class="fa fa-user-o"></i>
+
+				<form action="https://formspree.io/frat.kaos@gmail.com" method="POST" id="contact-form">
+
+					<div class="form-group row">
+						<label for="name">NOME</label>
+
+						<div class="input-group">
+							<div class="input-group-addon">
+								<i aria-hidden="true" class="fa fa-user-o"></i>
+							</div>
+							<input class="form-control" id="name" type="text">
 						</div>
-						<input class="form-control" id="nome" type="text">
 					</div>
-				</div>
-	
-				<div class="form-group row">
-					<label for="email">EMAIL</label>
-	
-					<div class="input-group">
-						<div class="input-group-addon">
-							<i aria-hidden="true" class="fa fa-envelope"></i>
+
+					<div class="form-group row">
+						<label for="email">EMAIL</label>
+
+						<div class="input-group">
+							<div class="input-group-addon">
+								<i aria-hidden="true" class="fa fa-envelope"></i>
+							</div>
+							<input class="form-control" id="email" type="email" name="_replyto">
 						</div>
-						<input class="form-control" id="email" type="email">
 					</div>
-				</div>
-	
-	
-				<div class="form-group row">
-					<label for="exampleTextarea">MENSAGEM</label>
-	
-					<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-				</div>
-				<button class="btn btn-primary enviar" type="button">ENVIAR</button>
+
+
+					<div class="form-group row">
+						<label for="message">MENSAGEM</label>
+
+						<textarea class="form-control" id="message" rows="3" name="message"></textarea>
+					</div>
+					<button class="btn btn-primary enviar" type="submit" value="Send" id="btnSend">Enviar</button>
+				</form>
 			</div>
 		</div>
 
@@ -318,7 +333,7 @@
 
 				<div class="col-md-6 col-sm-12 logo-bottom">
 					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffratkaos%2F&tabs&width=340&height=154&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-					    width="340" height="154" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+					  width="340" height="154" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
 				</div>
 			</div>
