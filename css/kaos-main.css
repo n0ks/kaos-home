@@ -62,7 +62,6 @@ header nav a:hover {
 	color: white;
 }
 
-
 header nav ul {
 	float: right;
 }
@@ -81,10 +80,31 @@ header h1#logo {
 	background: url(../img/logo.png) center/86px no-repeat;
 	font-size: 0px;
 }
-.list-unstyled{
-	margin: 3em 1em;
+
+header nav a:hover {
+	color: #fff;
 }
-.alertify-notifier .ajs-message{
+
+header.smaller {
+	height: 85px;
+}
+
+header.smaller h1#logo {
+	height: 80px;
+	line-height: 75px;
+	background : url(../img/logo.png) center/60px no-repeat
+}
+
+
+header.smaller.list-unstyled{
+	margin: 1em;
+}
+.list-unstyled {
+	margin: 2em;
+	margin-right: 5em;
+}
+
+.alertify-notifier .ajs-message {
 	position: fixed;
 	bottom: 0;
 	right: 0;
@@ -92,6 +112,7 @@ header h1#logo {
 	padding: 1em;
 	transition: all .3s;
 }
+
 .btn-menu {
 	width: 56px;
 	height: 56px;
