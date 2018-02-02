@@ -12,17 +12,15 @@ a:hover {
 body {
 	background-color: #f5f5f5;
 	overflow-x: hidden;
-	width: 100% !important;
 	font-family: 'Poppins', sans-serif;
+}
+
+html {
+	overflow-x: hidden;
 }
 
 img {
 	max-width: 100%;
-}
-
-.container {
-	padding-left: 0;
-	padding-right: 0;
 }
 
 /* =Header
@@ -176,6 +174,67 @@ header.smaller.list-unstyled {
 /* =Corpo
 -------------------------------------------------------------- */
 
+.bg-topo {
+	background: url('/img/frat1.jpg');
+	min-height: 50vw;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+}
+
+.bg-2 {
+	background: url('/img/projetos.jpg');
+	min-height: 45vw;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.sobre {
+	position: relative;
+	top: 9em;
+	margin: 0 auto;
+}
+
+.fraternidade {
+	text-align: center;
+}
+
+.fraternidade p {
+	padding: 1em 0;
+}
+
+.eventos p {
+	font-size: 18px;
+	color: #d15353;
+}
+
+.banners {
+	top: 140px;
+}
+
+.governanca-ti {
+	height: auto;
+	padding: 1.5em .75em;
+	margin: 1em 0;
+	text-align: justify;
+	box-shadow: 2px 3px 8px rgba(0, 0, 0, .2);
+}
+
+.governanca-ti:nth-child(even) {
+	background-color: rgba(212, 212, 212, 0.45);
+	border-radius: 5px;
+}
+
+.governanca-ti img {
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, .2);
+	margin: 0 1em;
+}
+
+.governanca-ti p {
+	font-family: 'Nunito Sans', sans-serif;
+}
+
 .mandamentos {
 	background: #1c2d41;
 	position: relative;
@@ -185,6 +244,7 @@ header.smaller.list-unstyled {
 .mandamento-list {
 	max-width: 800px;
 	text-align: left;
+	margin: 0 auto;
 }
 
 .mandamentos-wrap {
@@ -206,55 +266,6 @@ header.smaller.list-unstyled {
 	z-index: -1;
 }
 
-.sobre {
-	position: relative;
-	top: 9em;
-	padding: 0px 10px 0px 10px;
-	margin: 0 auto;
-}
-
-.fraternidade {
-	text-align: center;
-}
-
-.fraternidade h1 {
-	font-size: 30px;
-}
-
-.fraternidade p {
-	padding: 1em 0;
-}
-
-.eventos p {
-	font-size: 18px;
-	color: #d15353;
-}
-
-.banners {
-	top: 140px;
-}
-
-.governanca-ti {
-	height: auto;
-	padding: 1.5em .75em;
-	margin: 1em 0;
-	text-align: justify;
-}
-
-.governanca-ti:nth-child(even) {
-	background-color: rgba(212, 212, 212, 0.45);
-	border-radius: 5px;
-}
-
-.governanca-ti img {
-	box-shadow: 2px 2px 10px rgba(0, 0, 0, .2);
-	margin: 0 1em;
-}
-
-.governanca-ti p {
-	font-family: 'Nunito Sans', sans-serif;
-}
-
 .input-group-addon {
 	font-size: 12px;
 	line-height: 1;
@@ -266,6 +277,8 @@ header.smaller.list-unstyled {
 
 .formulario {
 	max-width: 800px;
+	margin-bottom: 15em;
+	padding: 0 2em;
 }
 
 .enviar {
@@ -291,19 +304,20 @@ header.smaller.list-unstyled {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	padding: 3em;
 }
 
 .row-color {
 	background-color: #171F26;
+	padding: 2em 0;
 }
 
 footer .row {
-	position: relative;
+	/* position: relative; */
 	top: 240px;
 	overflow: hidden;
 	width: 100%;
 	margin-left: 0px;
+	background-color: #171F26;
 }
 
 .row-cop {
@@ -311,15 +325,11 @@ footer .row {
 	height: 40px;
 	background-color: #0f1317;
 	overflow: hidden;
+
 }
 
 .row-cop p {
+	color: #ccc;
 	text-align: center;
 	line-height: 2;
-}
-
-.logo-bottom {}
-
-#topo-img {
-	overflow: hidden;
 }
