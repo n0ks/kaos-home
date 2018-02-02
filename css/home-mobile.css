@@ -22,6 +22,9 @@
 }
 
 @media only screen and (max-width: 767px) {
+	.bg-topo,.bg-2{
+		height: 25vh;
+	}
 	.lista-desk {
 		display: none !important;
 	}
