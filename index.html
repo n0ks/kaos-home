@@ -9,10 +9,10 @@
 
 	<title>Fraternidade KA0S</title>
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-	  crossorigin="anonymous"></script>
+	    crossorigin="anonymous"></script>
 	<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js"></script>
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/semantic.min.css" />
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
@@ -54,7 +54,7 @@
 			fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
 	</script>
-	<span id="home" style="width: 0.1, opacity: 0"></span>
+	<span id="home" style="width: 0.1; opacity: 0;"></span>
 	<header class="clearfix">
 		<a href="index.html">
 			<h1 id="logo">Fraternidade KAOS</h1>
@@ -65,23 +65,15 @@
 				<li>
 					<a class="hvr-overline-from-center" href="#home">HOME</a>
 				</li>
-
 				<li>
 					<a class="hvr-overline-from-center" href="#fraternidade">FRATERNIDADE</a>
 				</li>
-
 				<li>
 					<a class="hvr-overline-from-center" href="#projetos">PROJETOS</a>
 				</li>
-
-
-
-				<!-- 
 				<li>
-					<a class="hvr-overline-from-center" href="#integrantes">INTEGRANTES</a>
-				</li> -->
-
-
+					<a class="hvr-overline-from-center" href="#mandamentos">MANDAMENTOS</a>
+				</li>
 				<li>
 					<a class="hvr-overline-from-center" href="#contato">FALE CONOSCO</a>
 				</li>
@@ -106,9 +98,9 @@
 					<a class="hvr-overline-from-center" href="#projetos">PROJETOS</a>
 				</li>
 
-				<!-- <li>
-					<a class="hvr-overline-from-center" href="">INTEGRANTES</a>
-				</li> -->
+				<li>
+					<a class="hvr-overline-from-center" href="#mandamentos">MANDAMENTOS</a>
+				</li>
 				<li>
 					<a class="hvr-overline-from-center" href="#contato">FALE CONOSCO</a>
 				</li>
@@ -143,7 +135,7 @@
 				<img alt="fraternidade-teclado" src="img/frat1.jpg" id="topo-img">
 			</div>
 
-			<div class="container">
+			<div class="container clearfix">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="fraternidade-content">
@@ -163,11 +155,11 @@
 
 				<img alt="fraternidade-projetos" src="img/projetos.jpg" id="projetos">
 			</div>
-			<div class="container">
+			<div class="container mb-5">
 				<div class="row ">
 					<div class="col-md-12 col-lg-12">
 						<div class="governanca-ti" id="img-right">
-								<h1 class="text-uppercase">Governança TI</h1>
+							<h1 class="text-uppercase">Governança TI</h1>
 
 							<hr>
 
@@ -225,39 +217,76 @@
 
 						</div>
 						<div class="governanca-ti" id="img-right">
-								<h1 class="text-uppercase" id="h1-right">E-Sports</h1>
-	
-								<hr>
-								<div class="wrapper">
-	
-									<img alt="fraternidade-gov-ti" class="pull-right clearfix" src="img/esport.jpeg" width="200" id="dev">
-								</div>
-								<div class="wrapper">
-	
-									<div class="fraternidade-content">
-										<p>Equipe dedicada para o cenário competitivo de esportes eletrônicos, com base na filosofia que almeja alcançar suas
-												conquistas acreditando no potencial de cada membro que faz parte de sua equipe e sempre evoluir a cada queda para
-												o próxima luta.</p>
-									</div>
-								</div>
-								<br>
+							<h1 class="text-uppercase" id="h1-right">E-Sports</h1>
+
+							<hr>
+							<div class="wrapper">
+
+								<img alt="fraternidade-gov-ti" class="pull-right clearfix" src="img/esport.jpeg" width="200" id="dev">
 							</div>
-					</div>
+							<div class="wrapper">
 
-					<div class="eventos">
-						<h1 class="text-uppercase">Eventos</h1>
-
-						<hr>
-						<div class="row">
-							<div class="col-md-12">
-								<p>Nenhum evento disponível no momento.</p>
-
+								<div class="fraternidade-content">
+									<p>Equipe dedicada para o cenário competitivo de esportes eletrônicos, com base na filosofia que almeja alcançar suas
+										conquistas acreditando no potencial de cada membro que faz parte de sua equipe e sempre evoluir a cada queda para
+										o próxima luta.</p>
+								</div>
 							</div>
+							<br>
 						</div>
 
 
+						<div class="eventos">
+							<h1 class="text-uppercase">Eventos</h1>
+
+							<hr>
+							<div class="row">
+								<div class="col-md-12  mb-5">
+									<p>Nenhum evento disponível no momento.</p>
+
+								</div>
+							</div>
+
+
+						</div>
 					</div>
 
+
+				</div>
+			</div>
+			<div class="mandamentos-wrap" id="mandamentos">
+				<div class="container-fluid mandamentos mb-5">
+					<div class="row">
+						<div class="col-md-12 p-3">
+							<h1>DEZ MANDAMENTOS DE UM [K.A.O.S.] </h1>
+							<hr style="background:currentColor; opacity: .2; max-width:50%">
+							<div class="mandamento-list">
+								<ul class="list-unstyled p-5" style="line-height:1.8em;">
+									<li>
+										<strong>I</strong> - Amará o [K.A.O.S.] sobre todas as coisas</li>
+									<li>
+										<strong>II</strong> - Nunca omitir ou mentir que é um [K.A.O.S.]</li>
+									<li>
+										<strong>III </strong> - Usará o manto [K.A.O.S.]</li>
+									<li>
+										<strong>IV </strong> - O que acontece no [K.A.O.S.] ficará no [K.A.O.S.]</li>
+									<li>
+										<strong>V</strong> - Defenderá o [K.A.O.S.] com honra e respeito</li>
+									<li>
+										<strong>VI</strong> - Nunca leve desaforo para fora do [K.A.O.S.]</li>
+									<li>
+										<strong>VII</strong> - Compartilhará todo conhecimento com o [K.A.O.S.]</li>
+									<li>
+										<strong>VIII</strong> - Respeitará para ser respeitado</li>
+									<li>
+										<strong>IX</strong> - Não trairá um [K.A.O.S.]</li>
+									<li>
+										<strong>X </strong> - Jamais descumprirá os mandamentos [K.A.O.S.], se isso acontecer, assumirá as consequências e punições</li>
+								</ul>
+
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -299,41 +328,26 @@
 
 						<textarea class="form-control" id="message" rows="3" name="message"></textarea>
 					</div>
-					<button class="btn btn-primary enviar" type="submit" value="Send" id="btnSend">Enviar</button>
+					<button class="btn btn-success enviar" type="submit" value="Send" id="btnSend">Enviar</button>
 				</form>
 			</div>
 		</div>
-
-
-
-
-
-
-
 	</section>
-
 
 	<footer>
 		<div class="row row-color">
 			<div class="container rodape">
-				<div class="col-md-6 col-sm-12">
-					<h4>Contato</h4>
-
-					<hr class="linha">
-
-
-					<ul class="list-unstyled">
-						<li>Email:
-							<a href="mailto:frat.kaos@gmail.com">frat.kaos@gmail.com</a>
-						</li>
-
-					</ul>
+				<div class="col-md-6 col-sm-12 d-inline-flex flex-column justify-content-center text-center">
+					<div class="info">
+						<h4>Contato</h4>
+						<p>Email: <a href="mailto:frat.kaos@gmail.com">frat.kaos@gmail.com</a></p>
+					</div>
 				</div>
 
 
-				<div class="col-md-6 col-sm-12 logo-bottom">
+				<div class="col-md-6 col-sm-12 d-flex justify-content-center">
 					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffratkaos%2F&tabs&width=340&height=154&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-					  width="340" height="154" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+					    width="340" height="154" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
 				</div>
 			</div>
